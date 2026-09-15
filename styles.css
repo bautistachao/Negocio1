@@ -1,100 +1,72 @@
-* {
-    box-sizing: border-box;
-}
-
+/* Configuración general de la página */
 body {
-    font-family: 'Poppins', Arial, sans-serif;
-    background: #0f0f12;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f2f5;
     margin: 0;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
+/* Tarjeta principal contenedora */
 .card {
-    background: #1a1a1f;
-    padding: 40px 30px;
+    background: #ffffff;
+    padding: 35px 25px;
     border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     width: 100%;
-    max-width: 380px;
+    max-width: 400px;
     text-align: center;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.avatar {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 16px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #d4af37, #f5d67e);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 22px;
-    color: #1a1a1f;
+/* Títulos y textos */
+h2 {
+    color: #1a1a1a;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 26px;
 }
 
-h1 {
-    color: #ffffff;
-    font-size: 24px;
-    margin: 0 0 6px;
-    font-weight: 600;
-}
-
-.subtitle {
-    color: #9a9aa5;
-    font-size: 14px;
-    margin: 0 0 30px;
-}
-
-.links {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.link-btn {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: #26262e;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 14px 18px;
-    border-radius: 12px;
+p {
+    color: #666666;
     font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* Estilo base de los botones */
+.btn {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    margin: 14px 0;
+    border-radius: 12px;
     font-weight: 600;
-    text-align: left;
-    transition: transform 0.15s ease, background 0.15s ease;
-    border: 1px solid transparent;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.link-btn:hover {
+/* Efecto al pasar el mouse por encima de los botones */
+.btn:hover {
     transform: translateY(-2px);
+    filter: brightness(1.05);
 }
 
-.link-btn .icon {
-    font-size: 18px;
+/* Colores institucionales de cada red/servicio */
+.btn-google { 
+    background-color: #4285F4; 
 }
 
-.link-btn.whatsapp:hover {
-    border-color: #25D366;
+.btn-whatsapp { 
+    background-color: #25D366; 
 }
 
-.link-btn.google:hover {
-    border-color: #4285F4;
-}
-
-.link-btn.instagram:hover {
-    border-color: #E1306C;
-}
-
-.footer {
-    margin-top: 30px;
-    color: #55555f;
-    font-size: 12px;
+.btn-instagram { 
+    background: linear-pressed, 45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%;
+    background-color: #E1306C; /* Color sólido de respaldo si no soporta degradado */
 }
